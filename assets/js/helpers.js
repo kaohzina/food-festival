@@ -1,3 +1,5 @@
+
+
 function dateConverter(UNIX_timestamp){
   const a = new Date(UNIX_timestamp);
   const months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
@@ -15,4 +17,10 @@ function createLoremIpsum(numWords = 50) {
   const result = loremIpsum.split(/\s+/).slice(0,numWords).join(" ");
   return result;
 
+}
+
+
+module.exports = {
+  dateConverter,
+  createLoremIpsum
 }
